@@ -73,9 +73,3 @@ function saveToLocalStorage() {
 
 // Initial render
 renderStudents();
-    
-    
-    
-    
-    
-    
