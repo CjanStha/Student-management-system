@@ -1,0 +1,49 @@
+index.html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="split-container">
+            <!-- Left Side - Add Student Form -->
+            <div class="left-panel">
+                <h2>Add Student Details</h2>
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label>Student Name</label>
+                        <input type="text" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Student Email</label>
+                        <input type="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Admission Year</label>
+                        <input type="number" id="year" placeholder="Enter year" min="2000" max="2099" required>
+                    </div>
+                    <button type="submit" class="add-button">Add Student</button>
+                </form>
+            </div>
+
+            <!-- Right Side - Student List -->
+            <div class="right-panel">
+                <div class="header">
+                    <h2>Student List</h2>
+                    <input type="text" id="searchInput" placeholder="Search students...">
+                </div>
+                <div id="studentList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
